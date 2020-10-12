@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow-x: hidden;
+    font-family: 'Josefin Sans', sans-serif;
+}
+@keyframes fade{
+   0%{
+       opacity: 0;
+       transform: translateY(0px);
+   }
+   50%{
+    opacity: 0;
+    transform: translateY(5px);
+   }
+   75%{
+    opacity: 0;
+   }
+   100%{
+    opacity: 1;
+    transform: translateY(100px);
+   }
+}
+@media only screen and (min-width:320px){
+    nav{
+        background-color:  rgba(13, 29, 48, 0.7);
+        text-align: center;
+    }
+    .navbar-toggler {
+        padding: .20rem .60rem;
+        font-size: 2rem;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+        color: cyan;
+        font-weight: bold;
+    }
+    .banner{
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        position: relative;
+    }
+    .overlay{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        top:0;
+        left: 0;
+        background-color:  rgba(13, 29, 48, 0.7);
+        z-index: 1;
+    }
+    .ocean-letter{
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        color: cyan;
+        font-weight: bolder;
+        text-shadow: 2px 4px 6px black;
+        letter-spacing: 3px;
+        font-size: 1.2em;
+    }
+    .banner video{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        pointer-events: none;
+    
+    }
+    .content{
+        z-index: 1;
+        width: 100%;
+        text-align: center;
+    }
+    .content h1{
+        font-size: 2.2em;
+        color: lightblue;
+        text-shadow: 3px 3px 6px rgb(0, 0, 0);
+        overflow: hidden;
+    }
+    .content p{
+        font-size: 1.2em;
+        color: white;
+        text-shadow: 2px 3px 6px rgb(17, 17, 17);
+    }
+    .btn{
+        width: 250px;
+        height: 50px;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        font-weight: 800;
+        transition: all 0.3s  ease;
+        transform: scale(1);
+    }
+    .btn:hover{
+        transform: scale(0.9);
+    }
+    .btn-white{
+        background-color: white;
+        color: darkcyan;
+    }
+    .btn-green{
+     background-color: seagreen;
+     color: white;
+    }
+    .explore{
+        width: 100%;
+        min-height: 100vh;
+        background-image:linear-gradient(to bottom,rgb(3, 31, 43), rgb(6, 27, 53));
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+    .explore h1, .blog h1{
+        font-size: 3em;
+        color: white;
+        margin-top: 6%;
+    }
+    .explore p, .blog p{
+        font-size: 1.2em;
+        color:white
+    }
+    .card{
+        background-color:transparent;
+        width: 80%;
+        border: none;
+        margin: 8% auto;
+    }
+    .card-header{
+        border-bottom: none;
+        padding: 0;
+    }
+    .card-body{
+        cursor: pointer;
+    }
+    .card-body h3,h4{
+        color: white;
+    }
+
+    /* section adventures */
+    .adventures{
+        width: 100%;
+        min-height: 100vh;
+        background-image: url('../img/explore.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position:center center;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .overlay-adventures{
+        width: 100%;
+        height: 100vh;
+        position: absolute;
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5));
+    }
+    .adventures h1{
+        font-size: 3em;
+   
+    }
+    .adventures p{
+        font-size: 1.2em;
+        text-align: center;
+        color: white;
+        font-variant: small-caps;
+        font-weight: 500;
+    }
+    .email-field{
+        background-color: white;
+        width: 70%;
+        height: 45px;
+        border: none;
+        border-radius: 4px;
+        text-indent: 10px;
+        outline: none;
+        display: none;
+        animation: fade 0.5s forwards ease-out;
+    }
+
+    /* section blog */
+    .blog{
+        width: 100%;
+        min-height: 100vh;
+        background-color: rgb(0, 0, 0);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .post{
+        width: 100%;
+        background-color: white;
+        text-align: left;
+        margin-bottom: 10%;
+    }
+    .post-body{
+        color: black;
+        padding: 15px;
+        text-align: justify;
+    }
+    .post-body>h3{
+        font-size: 1.5em;
+    }
+    .post-body>span{
+        font-size: 1.2em;
+        margin-left: 50px;
+    }
+    .post-body p{
+        color: black;
+    }
+    .post-footer{
+        width: 100%;
+        text-align: end;
+    }
+    .post-footer ion-icon{
+        color: rgb(177, 92, 92);
+        font-size: 3rem;
+        position: relative;
+        right: 3%;
+        cursor: pointer;
+    }
+    .post-footer ion-icon:hover{
+        color: darkred;
+    }
+}
+@media only screen and (min-width:576px){
+    .content h1{
+        font-size: 2.8em;
+
+    }
+    .content p{
+        font-size: 1.4em;
+    }
+}
+@media only screen and (min-width:768px){
+    nav{
+        padding: 45px 0 45px 0;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      font-size: 1.9em;
+    }
+    .content h1{
+        font-size: 3.7em;
+
+    }
+    .content p{
+        font-size: 2em;
+    }
+
+    .explore h1, .blog h1{
+        font-size: 4em;
+
+    }
+    .explore p, .blog p{
+        font-size: 1.7em;
+    }
+
+    .adventures h1{
+        font-size: 4.2em;
+   
+    }
+    .adventures p{
+        font-size: 1.9em;
+    }
+    .btn{
+        width: 300px;
+        height: 70px;
+        font-size: 1.5em;
+    }
+}
+@media only screen and (min-width:992px){
+    nav{
+        height: 70px;
+    }
+    .navbar-dark .navbar-nav .nav-link {
+      position: relative;
+      color: aliceblue;
+      font-size: 18px;
+      transition: all 0.2s ease-out;
+    }
+    .navbar-dark .navbar-nav .nav-link:before {
+        content: '';
+        height:3px;
+        width: 0;
+        border-radius: 6px;
+        position: absolute;
+        bottom: 8px;
+        background-color: cyan;
+        transform-origin: center left;
+        transition: all 0.4s ease;
+    }
+    .navbar-dark .navbar-nav .nav-link:hover:before {
+        width: 85%;
+      }
+    .content h1{
+        font-size: 4.3em;
+        text-align: start;
+    }
+    .content p{
+        font-size: 1.6em;
+        text-align: justify;
+    }
+    .btn{
+        width: 270px;
+        height: 50px;
+    }
+
+    /* adventures */
+    .adventures h1{
+        font-size: 3.6em;
+   
+    }
+    .adventures p{
+        font-size: 1.4em;
+
+    }
+    .email-field{
+        width: 50%;
+    }
+    .post{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
+/* utilitarias */
+.italic{
+    font-style: italic;
+}
+.text-white{
+    color: white;
+}
+.nav-link{
+    cursor: pointer;
+}
+
+.img-responsive{
+    width: 100%;
+    height: 320px;
+
+}
+    /* explore */
+    .thumb{
+        width: auto;
+        position: relative;
+        display: block;
+        cursor: pointer;
+    }
+    .thumb:before{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 0;
+        display: block;
+        background-color: rgba(46, 125, 139, 0.7);
+        background-image: url('../img/ver-mais.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        transition: all 0.4s ease;
+    }
+    .thumb:hover:before{
+        height: 100%;
+    }
+
+/* overlay da imagem */
+
+.d-block{
+    display: block;
+}
