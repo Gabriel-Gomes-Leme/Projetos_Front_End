@@ -4,7 +4,7 @@
 }
 body{
     overflow-x: hidden;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 @keyframes fade{
    0%{
@@ -125,15 +125,16 @@ body{
         text-align: center;
     }
     .content h1{
-        font-size: 2.2em;
+        font-size: 2.2rem;
         color: lightblue;
         text-shadow: 3px 3px 6px rgb(0, 0, 0);
         overflow: hidden;
     }
     .content p{
-        font-size: 1.2em;
+        font-size: 1.1rem;
         color: white;
         text-shadow: 2px 3px 6px rgb(17, 17, 17);
+        text-align: center;
     }
     .explore{
         width: 100%;
@@ -233,14 +234,15 @@ body{
         text-align: justify;
     }
     .post-body>h3{
-        font-size: 1.5em;
+        font-size: 1.5rem;
     }
     .post-body>span{
-        font-size: 1.2em;
+        font-size: 1.2rem;
         margin-left: 50px;
     }
     .post-body p{
         color: black;
+        font-size: 1.2rem;
     }
     .post-footer{
         width: 100%;
@@ -260,7 +262,7 @@ body{
        /* fonte personalizada */
        .ocean-letter{
         font-family: Georgia, 'Times New Roman', Times, serif;
-        color: cyan;
+        color: rgb(18, 201, 201);
         font-weight: bolder;
         text-shadow: 2px 4px 6px black;
         letter-spacing: 3px;
@@ -307,11 +309,11 @@ body{
     }
 
     .explore h1, .blog h1{
-        font-size: 4em;
+        font-size: 3.1rem;
 
     }
     .explore p, .blog p{
-        font-size: 1.7em;
+        font-size: 1.3em;
     }
 
     .adventures h1{
@@ -366,7 +368,7 @@ body{
         width: 85%;
       }
     .content h1{
-        font-size: 4.3em;
+        font-size: 3.3em;
         text-align: start;
     }
     .content p{
